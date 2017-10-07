@@ -99,7 +99,7 @@ textarea {
 
 body {
 
-    background-color: #333;
+    /*background-color: #333;*/
     font-family: "Arima Madurai", sans-serif;
     /*background-image: 
         radial-gradient(rgba(255,255,255, 0.7) 1%, transparent 2%),
@@ -124,6 +124,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
+    margin-bottom: 500px;
 }
 .container>section {
     max-width: 900px;
@@ -133,26 +134,24 @@ body {
     position: relative;
 }
 #title {
-  font-family: Voltaire, cursive;
-  text-transform: capitalize;
-  height: 100%;
-  color:white;
-  font-size: 100px;
+  height:1000px;
+  max-height: 100%;
   text-align:center;
-  line-height: 1.75em;
-  background-image: radial-gradient(rgb(180,20,20) 35%, transparent 21%);
-  background-position: 50% 60%;
-  background-size: 800px 800px;
-  background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+}
+h1 {
+  color:rgb(180,20,20);
+  font-family: santeliaroughline, cursive;
+  font-size: 100px;
+  line-height: 1.75em;
 }
 h1>span.bigger{
   font-size:1.15em;
 }
 .spread {
-    margin-bottom: 50px;
-    opacity: 0;
+    margin-bottom: 100px;
+    /*opacity: 0;*/
     height:1000px;
     transition: all 1s ease-out;
     margin-left: auto;
@@ -168,28 +167,32 @@ h1>span.bigger{
    display: block;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+img.fade-in {
+  opacity: 1;
 }
 .caption {
   text-anchor: right;
   padding: 5px; 
   border-radius:25px;
   font-size:xx-large;
-  background: rgba(0,0,0,0.7);
-  transition: all 1s 10s ease-out;;
-  color:rgba(255,255,255,1);
+  
   position:absolute;             
   bottom:50px;     
   left: 80px;  
   width: 700px;
+  color:rgba(255,255,255,0);
+  background: rgba(0,0,0,0);
+  transition: all 1s 0.1s ease-out;
 }
 .caption>p{
   margin:0.5em;
 }
-.fade-in>.caption{
-
-    color:rgba(255,255,255,0);
-    background: rgba(0,0,0,0);
-                
+.fade-in.caption{
+  color:rgba(255,255,255,1);
+  background: rgba(0,0,0,1); 
 }
 
 
