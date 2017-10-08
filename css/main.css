@@ -117,83 +117,110 @@ body {
     background-size:120px 120px;*/
 }
 
+
 #wrapper {
   height:100%;
 }
-.container {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 100%;
-    margin-bottom: 500px;
-}
-.container>section {
-    max-width: 900px;
-    max-height: 1100px; 
 
-    padding-bottom: 10px;
-    position: relative;
+.outer-container {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width:100%;
+    height:100%;
+    display:relative;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto; 
+  width:90vw; 
+  max-height:100vh;
+}
+
 #title {
-  height:1000px;
+  height:100vh;
   max-height: 100%;
   text-align:center;
-  margin-left: auto;
-  margin-right: auto;
-}
+}  
+
 h1 {
   color:rgb(180,20,20);
   font-family: santeliaroughline, cursive;
   font-size: 100px;
 }
 
-.spread {
-    margin-bottom: 100px;
-    /*opacity: 0;*/
-    height:1000px;
-    transition: all 1s ease-out;
-    margin-left: auto;
-    margin-right: auto;
+figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  position: relative;
+  margin-bottom: 100px;
+  width:80vh;
+  height:100vh;
+  transition: all 1s ease-out;
+    
 }
-.spread.fade-in {
+
+figure.fade-in {
     opacity: 1;
 }
 
-.spread>img {
-  max-width: 100%;
-  max-height:100%;
-   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    transition: all 1s ease-out;
+figure>img {
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+   opacity: 0;
+   transition: all 1s ease-out;
 }
-img.fade-in {
+figure>img.fade-in {
   opacity: 1;
 }
-.caption {
-  text-anchor: right;
+figcaption {
+  margin-left: auto;
+  margin-right: auto; 
   padding: 5px; 
-  border-top-left-radius:25px;
-  border-top-right-radius:25px;
-  font-size:xx-large;
-  
-  position:absolute;             
-  bottom:10px;     
-  right: -500px;  
-  max-width: 800px;
+  border-radius:25px;
+  font-size:large;
+  position: absolute; 
+  right:10%;
+  width: 90%;
+  max-width: 20em;
+  bottom:-5%;     
   color:rgba(255,255,255,0);
   background: rgba(0,0,0,0);
   transition: all 1s 0.1s ease-out;
 }
-.caption>p{
+figcaption>p{
   margin:0.5em;
 }
-.fade-in.caption{
-  right:50px;
+figcaption.fade-in{
+  position: absolute;
+  bottom:5%;
   color:rgba(255,255,255,1);
   background: rgba(0,0,0,1); 
 }
 
+@media (max-width: 1000px) {
+  figcaption {
+    font-size: xx-large;
+    width: 90%;
+    bottom:25%;  
+  }
+
+  figure {
+  width:90vw;
+  height:100vh;
+  transition: all 1s ease-out; 
+  }
+
+  figcaption.fade-in{
+  position: absolute;
+  bottom:30%;
+  color:rgba(255,255,255,1);
+  background: rgba(0,0,0,1); 
+}
+
+}
 
 
 
