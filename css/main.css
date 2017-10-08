@@ -180,7 +180,7 @@ figcaption {
   margin-right: auto; 
   padding: 5px; 
   border-radius:25px;
-  font-size:large;
+  font-size:x-large;
   position: absolute; 
   right:10%;
   width: 90%;
@@ -220,6 +220,29 @@ figcaption.fade-in{
   background: rgba(0,0,0,1); 
 }
 
+@media all and (orientation:landscape) {
+  figure>img {
+    width:50%;
+    float:left;
+  }
+  figcaption {
+    width:45%;
+    right:5%;
+  }
+  figure {
+    clear:all;
+    max-height: 100vh;
+  }
+  figcaption {
+    width:50%;
+    bottom:0;
+  }
+
+  figcaption.fade-in{
+  position: absolute;
+  bottom:0%;
+  color:rgba(255,255,255,1);
+  background: rgba(0,0,0,1); 
 }
 
 
