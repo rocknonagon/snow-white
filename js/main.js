@@ -1,4 +1,9 @@
 $(document).ready(function(){
+  $("img.lazy").each(function() {
+    $(this).attr("src", $(this).attr("data-original"));
+    $(this).removeAttr("data-original");
+});
+
   var controller = new ScrollMagic.Controller();
 
   /*var scene_title = new ScrollMagic.Scene({

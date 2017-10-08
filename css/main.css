@@ -225,21 +225,18 @@ figcaption.fade-in{
     width:50%;
     float:left;
   }
-  figcaption {
-    width:45%;
-    right:5%;
-  }
+ 
   figure {
-    clear:all;
+    clear:both;
     max-height: 100vh;
   }
   figcaption {
-    width:50%;
+    width:48%;
+    right:0%;
     bottom:0;
   }
 
   figcaption.fade-in{
-  position: absolute;
   bottom:0%;
   color:rgba(255,255,255,1);
   background: rgba(0,0,0,1); 
