@@ -144,11 +144,8 @@ h1 {
   color:rgb(180,20,20);
   font-family: santeliaroughline, cursive;
   font-size: 100px;
-  line-height: 1.75em;
 }
-h1>span.bigger{
-  font-size:1.15em;
-}
+
 .spread {
     margin-bottom: 100px;
     /*opacity: 0;*/
@@ -176,13 +173,14 @@ img.fade-in {
 .caption {
   text-anchor: right;
   padding: 5px; 
-  border-radius:25px;
+  border-top-left-radius:25px;
+  border-top-right-radius:25px;
   font-size:xx-large;
   
   position:absolute;             
-  bottom:50px;     
-  left: 80px;  
-  width: 700px;
+  bottom:10px;     
+  right: -500px;  
+  max-width: 800px;
   color:rgba(255,255,255,0);
   background: rgba(0,0,0,0);
   transition: all 1s 0.1s ease-out;
@@ -191,6 +189,7 @@ img.fade-in {
   margin:0.5em;
 }
 .fade-in.caption{
+  right:50px;
   color:rgba(255,255,255,1);
   background: rgba(0,0,0,1); 
 }
