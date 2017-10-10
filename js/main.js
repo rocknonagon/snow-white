@@ -7,23 +7,37 @@ $(document).ready(function(){
   var controller = new ScrollMagic.Controller();
 
     $('figure').each(function(){
-    
+
+      var img_scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        duration:"120%",
+        triggerHook:0.3,
+    })
+      .setClassToggle($(this).find('img')[0], 'fade-in')
+      .addTo(controller);
+
       var caption_scene = new ScrollMagic.Scene({
         triggerElement: this,
-        duration:"60%",
-        triggerHook:0.5,
+        duration:"120%",
+        triggerHook:0.3,
 
     })
       .setClassToggle($(this).children('figcaption')[0], 'fade-in')
       .addTo(controller);
-
-      var img_scene = new ScrollMagic.Scene({
-        triggerElement: this,
-        duration:"110%",
-        triggerHook:0.7,
-    })
-      .setClassToggle($(this).children('img')[0], 'fade-in')
-   //   .setPin($(this).prev().children('img')[0], {pushFollowers:false})
-      .addTo(controller);
   });
+
+    $('.pin-me').each(function(){
+      console.log(this);
+
+      var pin_scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0
+      })
+        .setPin(this, {pushFollowers : false})
+        .addTo(controller);
+    });
+
+      
+
+
 });
