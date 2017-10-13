@@ -130,9 +130,9 @@ body {
   }
 }
 
-#title {
+header {
   height:100vh;
-  max-height: 1000px;
+  max-height: 800px;
   text-align:center;
 }  
 
@@ -140,6 +140,7 @@ h1 {
   color:rgb(180,20,20);
   font-family: santeliaroughline, cursive;
   font-size: 100px;
+  line-height: 1.2;
 }
 
 figure {
@@ -179,7 +180,7 @@ figcaption {
   padding: 5px;
   border-radius:25px;
   font-size:x-large;
-  width: 90%; /* need to overwrite for landscape mode!*/ 
+  max-width: 90%; /* need to overwrite for landscape mode!*/ 
 
   color:rgba(255,255,255,0); 
   background: rgba(0,0,0,0);
@@ -202,11 +203,13 @@ figcaption>p {
 
 /**************************************************************
 
-   small height
+   small width
 
 ***************************************************************/
 
-@media (min-height: 35em) {
+@media screen and (max-width: 500px) {
+
+
   figcaption {
     font-size: x-large;  
   }
@@ -217,6 +220,7 @@ figcaption>p {
   }
 
   figure img {
+    border-top: 20vh solid rgba(255,255,255,0.1);
     margin-top:10%;
     opacity:0;
     transition: all 1s ease-out;
@@ -273,7 +277,7 @@ figcaption>p {
     max-height: 100vh;
   }
   figcaption {
-    max-width:48.7%;
+    width:48%;
     left:75%;
     top:50%;
     transform: translate(-50%,-50%);
