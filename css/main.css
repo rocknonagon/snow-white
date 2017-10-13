@@ -220,8 +220,8 @@ figcaption>p {
   }
 
   figure img {
-    border-top: 20vh solid rgba(255,255,255,0.1);
-    margin-top:10%;
+    border-top: 15vh solid rgba(255,255,255,0.3);
+    border-bottom: 15vh solid rgba(255,255,255,0.3);
     opacity:0;
     transition: all 1s ease-out;
     margin-top:0;
@@ -235,7 +235,7 @@ figcaption>p {
   figcaption {
     background-color: rgb(0,0,0,0);
     color:rgba(255,255,255,1);
-    top:70%;
+    top:90%;
     transition: all 1s ease-out;
   }
 
