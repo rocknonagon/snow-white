@@ -27,8 +27,7 @@ $(document).ready(function(){
   });
 
     $('.pin-me').each(function(){
-      console.log(this);
-
+      
       var pin_scene = new ScrollMagic.Scene({
         triggerElement: this,
         triggerHook: 0
