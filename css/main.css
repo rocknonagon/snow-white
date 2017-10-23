@@ -175,7 +175,7 @@ figure img {
   margin-top:auto;
 
   opacity: 0;
-  transition: all 1s ease-out;
+  transition: all 0.5s ease-out;
 }
 figure img.fade-in {
   opacity: 1;
@@ -196,7 +196,7 @@ figcaption {
   background: rgba(0,0,0,0);
   margin-bottom: 100px;
 
-  transition: all 1s 0.1s ease-out;
+  transition: all 1s ease-out;
 
 }
 figcaption.fade-in{
@@ -212,12 +212,13 @@ figcaption>p {
 
 footer {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 footer a {
   height: 2em;
   padding: 20px;
+
 }
 
 ol#links-to-pages {
@@ -227,25 +228,31 @@ ol#links-to-pages {
   padding-left:5vw;
 }
 #links-to-pages li {
+  color:white;
   float:left;
   display: inline-block;  
-  background-image: radial-gradient(white 0%, rgb(200,200,220) 100%);
   text-align: center;
   margin: 5px;
   width:50px;
   height:50px;
   line-height: 50px;
   border-radius: 50%;
+  border: solid 1px #888;
 }
 
- a {
+a {
   text-decoration:none;
-  color: #999;
+}
+
+a {
+  color: #888;
+}
+
+#links-to-pages a, footer a {
   padding: 15px;
 }
  a:hover, a:active { 
   color: rgb(180,20,20);
-
 }
  
 /**************************************************************

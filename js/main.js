@@ -11,7 +11,7 @@ $(document).ready(function(){
       var img_scene = new ScrollMagic.Scene({
         triggerElement: this,
         duration:"120%",
-        triggerHook:0.3,
+        triggerHook:0.1,
     })
       .setClassToggle($(this).find('img')[0], 'fade-in')
       .addTo(controller);
@@ -19,7 +19,7 @@ $(document).ready(function(){
       var caption_scene = new ScrollMagic.Scene({
         triggerElement: this,
         duration:"120%",
-        triggerHook:0.3,
+        triggerHook:0.1,
 
     })
       .setClassToggle($(this).children('figcaption')[0], 'fade-in')
