@@ -1,9 +1,6 @@
 $(document).ready(function(){
-  $("img.lazy ").each(function() {
-    $(this).attr("src", $(this).attr("data-original"));
-    $(this).removeAttr("data-original");
-});
-
+  lazyload();
+  
   var controller = new ScrollMagic.Controller();
 
     $('figure').each(function(){
