@@ -131,17 +131,28 @@ body {
 }
 
 header {
-  height:100vh;
+  background-color: white;
+  min-height:80vh;
   max-height: 800px;
   text-align:center;
-}  
+  opacity:1;
+} 
+
+.story {
+  padding-top:0;
+  margin-top: 200px;
+  position:relative;
+  margin-bottom: 400px;
+}
 
 h1 {
   color:rgb(180,20,20);
   font-family: santeliaroughline, cursive;
   font-size: 100px;
   line-height: 1.2;
+  margin: 0.3em 0;
 }
+
 
 figure {
   display: block;
@@ -149,7 +160,6 @@ figure {
   margin-right: auto;
 
   position: relative;
-
   margin-bottom: 100px;
 
   max-width:80vh; /* need to overwrite for landscape mode!*/
@@ -184,7 +194,7 @@ figcaption {
 
   color:rgba(255,255,255,0); 
   background: rgba(0,0,0,0);
-   margin-bottom: 100px;
+  margin-bottom: 100px;
 
   transition: all 1s 0.1s ease-out;
 
@@ -200,7 +210,44 @@ figcaption>p {
   margin:0.5em;
 }
 
+footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
 
+footer a {
+  height: 2em;
+  padding: 20px;
+}
+
+ol#links-to-pages {
+  margin-top: 2em;
+  list-style-type: none;
+  width:90vw;
+  padding-left:5vw;
+}
+#links-to-pages li {
+  float:left;
+  display: inline-block;  
+  background-image: radial-gradient(white 0%, rgb(200,200,220) 100%);
+  text-align: center;
+  margin: 5px;
+  width:50px;
+  height:50px;
+  line-height: 50px;
+  border-radius: 50%;
+}
+
+ a {
+  text-decoration:none;
+  color: #999;
+  padding: 15px;
+}
+ a:hover, a:active { 
+  color: rgb(180,20,20);
+
+}
+ 
 /**************************************************************
 
    small width

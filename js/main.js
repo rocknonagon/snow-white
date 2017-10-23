@@ -30,7 +30,8 @@ $(document).ready(function(){
       
       var pin_scene = new ScrollMagic.Scene({
         triggerElement: this,
-        triggerHook: 0
+        triggerHook: 0,
+        duration:"100%"
       })
         .setPin(this, {pushFollowers : false})
         .addTo(controller);
