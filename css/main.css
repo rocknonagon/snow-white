@@ -164,7 +164,7 @@ body {
 
 header {
   background-color: white;
-  min-height:80vh;
+  min-height:100vh;
   max-height: 800px;
   text-align:center;
   opacity:1;
